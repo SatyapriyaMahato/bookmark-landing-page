@@ -28,7 +28,7 @@ body {
 }
 
 section {
-    padding: 10em 0;
+    padding: 5em 0;
 }
 
 h1 {
@@ -38,29 +38,28 @@ h1 {
 
 h2 {
     font-size: 3.5rem;
-    font-weight: 300;
+
 }
 
 h3 {
     font-size: 3rem;
-    font-weight: 300;
+
 }
 
 h4 {
     font-size: 2rem;
-    font-weight: 300;
+
 }
 
 h5 {
     font-size: 1rem;
-    font-weight: 300;
     color: var(--Grayish-Blue);
 }
 
 p {
     font-size: 1.6rem;
-    font-weight: 300;
-    color: var(--Grayish-blue);
+    font-weight: 400;
+    color: var(--Grayish-Blue);
     line-height: 1.5em;
 }
 
@@ -81,8 +80,7 @@ a:hover {
     border: none;
     color: #fff;
     font-size: 1.4rem;
-    letter-spacing: .1em;
-    font-weight: 400;
+    font-weight: 600;
     height: 3em;
     border-radius: 6px;
     display: flex;
@@ -91,7 +89,7 @@ a:hover {
     box-shadow: 0 4px 10px -6px black;
 }
 
-.btn:hover {
+.login-btn:hover {
     border: 2px solid var(--Soft-Red);
     background-color: #fff;
     color: var(--Soft-Red);
@@ -99,7 +97,7 @@ a:hover {
 }
 
 .container {
-    max-width: 1110px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 4rem;
 }
@@ -117,9 +115,7 @@ header {
     justify-content: space-between;
     color: var(--Very-Dark-Blue);
     height: 11rem;
-    padding: 0 2rem;
     margin: 0 auto;
-    border-bottom: 1px solid grey;
 }
 
 .nav-left {
@@ -217,8 +213,6 @@ header {
 
 }
 
-
-
 /* menu style end */
 
 .nav-right {
@@ -228,6 +222,75 @@ header {
     position: relative;
 
 }
+
+/* hero style start */
+
+.div-hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div-hero-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 4em;
+
+}
+
+.div-hero-left h1 {
+    font-weight: 500;
+    color: var(--Very-Dark-Blue);
+}
+
+.hero-btns {
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+}
+
+.hero-btn1 {
+    background-color: var(--Soft-Blue);
+}
+
+.hero-btn1:hover {
+    border: 2px solid var(--Soft-Blue);
+    background-color: #fff;
+    color: var(--Soft-Blue);
+    cursor: pointer;
+}
+
+.hero-btn2 {
+    background-color: hsl(229, 8%, 90%);
+    color: var(--Dark-grayish-blue);
+}
+
+.hero-btn2:hover {
+    border: 2px solid var(--Very-Dark-Blue);
+    background-color: #fff;
+    color: var(--Very-Dark-Blue);
+    cursor: pointer;
+}
+
+.div-hero-right {
+    width: 60%;
+    position: relative;
+    right: -10em;
+}
+
+.div-illustration {
+    height: 35em;
+    width: 60em;
+    border-radius: 175px 0 0 175px;
+    background-color: var(--Soft-Blue);
+    position: relative;
+    margin-top: -33em;
+    right: -20em;
+    z-index: -1;
+
+}
+
 
 .hidden {
     display: none;
@@ -329,6 +392,49 @@ header {
         align-items: center;
         gap: 4em;
     }
+
+    .div-hero {
+        align-items: center;
+        flex-direction: column-reverse;
+        gap: 8em;
+    }
+
+    .div-hero-right {
+        width: 100%;
+        right: 0;
+        left: -2em;
+    }
+
+    .div-hero-right img {
+        width: 110%;
+    }
+
+    .div-illustration {
+        height: 80%;
+        width: 100%;
+        border-radius: 175px 0 0 175px;
+        background-color: var(--Soft-Blue);
+        position: absolute;
+        margin-top: -55%;
+        right: -20%;
+        z-index: -1;
+    }
+
+    .div-hero-left h1 {
+        font-size: 3.3rem;
+    }
+
+    .div-hero-left {
+        text-align: center;
+        align-items: center;
+    }
+
+    .hero-btns {
+        width: 100%;
+    }
+
+
+    /* hero section end */
 
 }
 
