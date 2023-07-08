@@ -31,6 +31,14 @@ section {
     padding: 5em 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h4 {
+    color: var(--Very-Dark-Blue);
+}
+
 h1 {
     font-size: 4rem;
     font-weight: 300;
@@ -75,7 +83,7 @@ a:hover {
 .btn {
     width: 100%;
     min-width: 10rem;
-    background-color: var(--Soft-Red);
+    background-color: var(--Soft-Blue);
     outline: none;
     border: none;
     color: #fff;
@@ -87,6 +95,17 @@ a:hover {
     justify-content: center;
     align-items: center;
     box-shadow: 0 4px 10px -6px black;
+}
+
+.btn:hover {
+    border: 2px solid var(--Soft-Blue);
+    background-color: #fff;
+    color: var(--Soft-Blue);
+    cursor: pointer;
+}
+
+.login-btn {
+    background-color: var(--Soft-Red);
 }
 
 .login-btn:hover {
@@ -223,7 +242,7 @@ header {
 
 }
 
-/* hero style start */
+/* hero section start */
 
 .div-hero {
     display: flex;
@@ -250,17 +269,6 @@ header {
     gap: 2em;
 }
 
-.hero-btn1 {
-    background-color: var(--Soft-Blue);
-}
-
-.hero-btn1:hover {
-    border: 2px solid var(--Soft-Blue);
-    background-color: #fff;
-    color: var(--Soft-Blue);
-    cursor: pointer;
-}
-
 .hero-btn2 {
     background-color: hsl(229, 8%, 90%);
     color: var(--Dark-grayish-blue);
@@ -268,9 +276,7 @@ header {
 
 .hero-btn2:hover {
     border: 2px solid var(--Very-Dark-Blue);
-    background-color: #fff;
     color: var(--Very-Dark-Blue);
-    cursor: pointer;
 }
 
 .div-hero-right {
@@ -291,6 +297,9 @@ header {
 
 }
 
+/* hero section end */
+
+/* feature section start */
 .div-features {
     display: flex;
     flex-direction: column;
@@ -309,7 +318,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 6em;
+    padding-top: 4em;
     gap: 6em;
     margin: 0 auto;
 }
@@ -321,7 +330,7 @@ header {
 
 .feature-header p {
     text-align: center;
-    padding: 2.4em 0;
+    padding: 1.9em 0;
     background-image: linear-gradient(red, red);
     background-size: 0 5px, auto;
     background-repeat: no-repeat;
@@ -333,7 +342,6 @@ header {
     background-size: 100% 4px, auto;
 
 }
-
 
 .feature-content {
     margin-top: 5em;
@@ -355,7 +363,7 @@ header {
     width: 60em;
     border-radius: 0 175px 175px 0;
     background-color: var(--Soft-Blue);
-    left: -30em;
+    left: -15em;
     top: 40rem;
     z-index: -1;
 }
@@ -372,7 +380,6 @@ header {
     font-weight: 500;
 }
 
-
 .feature-content-right button {
     background-color: var(--Soft-Blue);
     width: 10em;
@@ -385,9 +392,76 @@ header {
     cursor: pointer;
 }
 
+/* feature section end */
+
+
+/* extension  section start */
+.div-extensions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 100%;
+}
+
+.extension-header {
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+    align-items: center;
+    text-align: center;
+}
+
+.extension-header p {
+    width: 60%;
+}
+
+.div-extension-cards {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8em;
+    width: 90%;
+}
+
+.extension-card {
+    width: 30em;
+    padding: 2em;
+    border-radius: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 4px 8px 25px -15px black;
+    height: 36em;
+
+}
+
+.extension-card:nth-child(2) {
+    margin-top: 4em;
+}
+
+.extension-card:nth-child(3) {
+    margin-top: 8em;
+}
+
+.extension-card p {
+    margin-top: .4em;
+}
+
+.extension-card h3 {
+    margin-top: 1em;
+}
+
+.dot-img {
+    margin: 4em 0 3em 0;
+}
 
 .hidden {
     display: none;
+}
+
+.fixed-position {
+    position: fixed;
 }
 
 @media (max-width: 768px) {
@@ -439,7 +513,7 @@ header {
         background-size: 0 5px, auto;
         background-position: left bottom;
         font-weight: 400;
-        font-size: 1.6em;
+        font-size: 1em;
     }
 
     .site-logo {
@@ -533,7 +607,7 @@ header {
 
     /* feature section start */
     .div-features {
-        border-bottom: 2px solid var(--Very-Dark-Blue);
+        border-bottom: 1px solid var(--Very-Dark-Blue);
         padding-bottom: 4em;
     }
 
@@ -562,15 +636,14 @@ header {
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 10em;
+        height: 8em;
         width: 100%;
-        border-bottom: 2px solid var(--Very-Dark-Blue);
+        border-bottom: 1px solid var(--Very-Dark-Blue);
     }
 
     /* feature section end */
 
     /* feature content start */
-
     .feature-content {
         flex-direction: column;
         gap: 10em;
@@ -608,6 +681,24 @@ header {
 
     /* feature content end */
 
+    /* extensions start*/
+    .div-extension-cards {
+        width: 100%;
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .extension-card:nth-child(1),
+    .extension-card:nth-child(2),
+    .extension-card:nth-child(3) {
+        margin-top: 6em;
+    }
+
+    .extension-header p {
+        width: 100%;
+    }
+
+    /* extensions end*/
 
 }
 
