@@ -164,7 +164,7 @@ header {
     align-items: center;
 }
 
-.menu>li {
+li {
     margin: 0 0rem;
     overflow: hidden;
     font-size: 1.4rem;
@@ -172,7 +172,7 @@ header {
     font-weight: 300;
     list-style: none;
     margin-left: 1em;
-    padding: 3em 0;
+
 }
 
 .menu-button-container {
@@ -420,6 +420,7 @@ header {
     position: relative;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-top: 8em;
     width: 85%;
 }
@@ -637,6 +638,54 @@ input::placeholder {
 }
 
 /* form  section end */
+
+
+/* footer  section start */
+footer {
+    padding-top: 4em;
+    background-color: var(--Very-Dark-Blue);
+}
+
+.footer-contents {
+    margin: 4em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div-footer ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 5rem;
+    align-items: center;
+}
+
+.div-footer ul li {
+    margin-left: 0;
+    letter-spacing: .1em;
+    color: #fff;
+}
+
+.div-footer ul li:hover {
+    color: var(--Soft-Red);
+    cursor: pointer;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 3em;
+    color: #fff;
+}
+
+.footer-icons svg:hover {
+    cursor: pointer;
+    color: var(--Soft-Red);
+}
+
+/* footer  section end */
 
 
 
@@ -914,6 +963,17 @@ input::placeholder {
     }
 
     /* form  section end */
+
+    /* footer  section start */
+    .div-footer ul,
+    .footer-contents {
+        flex-direction: column;
+    }
+
+    .footer-icons {
+        margin: 5rem 0;
+    }
+
 
 
 
