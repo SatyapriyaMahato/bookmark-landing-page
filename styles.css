@@ -421,7 +421,7 @@ header {
     display: flex;
     justify-content: space-between;
     margin-top: 8em;
-    width: 90%;
+    width: 85%;
 }
 
 .extension-card {
@@ -456,13 +456,97 @@ header {
     margin: 4em 0 3em 0;
 }
 
-.hidden {
-    display: none;
+/* extension  section end */
+
+
+/* faq  section start */
+.div-faq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.fixed-position {
-    position: fixed;
+.faq-header {
+    margin-top: 4em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 4em;
 }
+
+.faq-header p {
+    width: 60%;
+}
+
+.faqs {
+    margin-top: 4em;
+    width: 46%;
+    display: flex;
+    flex-direction: column;
+}
+
+.questions {
+    padding-top: 3em;
+    border-top: 1px solid var(--Grayish-Blue);
+    position: relative;
+}
+
+.questions:last-child {
+    border-bottom: 1px solid var(--Grayish-Blue);
+}
+
+.q-head {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4em;
+}
+
+.q-head h4 {
+    font-size: 1.5em;
+    font-weight: 400;
+    color: inherit;
+}
+
+.faq-arrow {
+    position: absolute;
+    right: 0;
+}
+
+.arrow-icon {
+    color: var(--Soft-Blue);
+}
+
+.arrow-icon:hover {
+    cursor: pointer;
+    color: var(--Soft-Red);
+}
+
+.q-head:hover {
+    cursor: pointer;
+    color: var(--Soft-Red);
+}
+
+.answer {
+    margin-top: 2em;
+    margin-bottom: 1em;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
+.answer p {
+    font-size: 1.4rem;
+    line-height: 2em;
+}
+
+/* faq  section end */
+
+
+
+
 
 @media (max-width: 768px) {
 
@@ -700,6 +784,37 @@ header {
 
     /* extensions end*/
 
+    /* faq  section start */
+    .faq-header {
+        margin: 0;
+    }
+
+    .faq-header p,
+    .faqs {
+        width: 100%;
+    }
+
+    /* faq  section end */
+
+
+
+}
+
+/*extra classes */
+.rotate {
+    transform: rotate(180deg);
+}
+
+.active {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.fixed-position {
+    position: fixed;
 }
 
 .attribution {
