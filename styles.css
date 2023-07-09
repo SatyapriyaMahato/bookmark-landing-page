@@ -542,7 +542,101 @@ header {
     line-height: 2em;
 }
 
+.faq-btn {
+    margin-top: 4em;
+}
+
 /* faq  section end */
+
+
+/* form  section start */
+#formSection {
+    background-color: var(--Soft-Blue);
+}
+
+.div-form {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-form h3,
+.div-form p,
+#form {
+    width: 40%;
+    color: #fff;
+}
+
+.div-form h3 {
+    font-weight: 500;
+    margin-top: 3rem;
+}
+
+.div-form p {
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    font-size: 1rem;
+}
+
+#form {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    margin: 3rem 0;
+}
+
+#form .input-div {
+    width: 100%;
+    position: relative;
+}
+
+input {
+    width: 100%;
+    height: 4rem;
+    border: none;
+    outline: none;
+    padding: 1em;
+    border-radius: 6px;
+}
+
+input::placeholder {
+    color: var(--Grayish-Blue);
+}
+
+.error-msg {
+    background: var(--Soft-Red);
+    color: #fff;
+    padding: .5em;
+    text-align: left;
+    margin-top: -4px;
+    border-radius: 0 0 4px 4px;
+    display: none;
+}
+
+.error-icon {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    display: none;
+}
+
+.input-error {
+    border: 2px solid var(--Soft-Red);
+
+}
+
+.contact-btn {
+    background-color: var(--Soft-Red);
+    width: 40%;
+}
+
+.contact-btn:hover {
+    color: var(--Soft-Red);
+    border: 2px solid var(--Soft-Red);
+}
+
+/* form  section end */
 
 
 
@@ -795,6 +889,31 @@ header {
     }
 
     /* faq  section end */
+
+
+    /* form  section start */
+
+    .div-form {
+        width: 100%;
+    }
+
+    .div-form h3,
+    .div-form p,
+    #form {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .input-div input {
+        height: 4rem;
+        width: 100%;
+    }
+
+    .contact-btn {
+        width: 100%;
+    }
+
+    /* form  section end */
 
 
 

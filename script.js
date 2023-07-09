@@ -63,3 +63,40 @@ function faqAnimation(content) {
         content.style.maxHeight = content.scrollHeight + "px";
     }
 }
+
+
+// form section
+const emailId = document.getElementById('user_email'),
+    form = document.getElementById('form');
+
+form.addEventListener('submit', e => {
+    const emailText = emailId.value.trim();
+    e.preventDefault();
+    if (validateEmail(emailText)) {
+        setSuccess();
+    } else {
+        setError();
+    }
+
+});
+
+const setSuccess = () => {
+    document.querySelector(".error-msg").style.display = "none";
+    document.querySelector(".error-icon").style.display = "none";
+    emailId.classList.remove("input-error");
+}
+
+const setError = () => {
+    document.querySelector(".error-msg").style.display = "block";
+    document.querySelector(".error-icon").style.display = "block";
+    emailId.classList.add("input-error");
+}
+
+
+const validateEmail = (email) => {
+    return String(email)
+        .toLowerCase()
+        .match(
+            /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+        );
+};
